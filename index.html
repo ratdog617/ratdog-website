@@ -27,7 +27,7 @@
         <div class="container">
             <h2>Gnagare i huset?</h2>
             <p class="big-text">Vi fixar det. Och det kostar bara om vi fångar något!</p>
-            <button class="cta-button" onclick="scrollToContact()">Ring oss nu!</button>
+            <button class="cta-button" onclick="scrollToContact()">Kontakta oss!</button>
         </div>
     </section>
 
@@ -76,20 +76,32 @@
     <section id="kontakt" class="contact">
         <div class="container">
             <h2>Kontakta oss</h2>
-            <div class="contact-info">
-                <div class="info-item">
-                    <h3>📞 Ring direkt</h3>
-                    <p><a href="tel:+46701234567">070-123 45 67</a></p>
+            <p class="intro-text">Fyll i formuläret nedan så hör vi av oss snart!</p>
+            
+            <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Namn *</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-                <div class="info-item">
-                    <h3>📧 E-post</h3>
-                    <p><a href="mailto:info@ratdog.se">info@ratdog.se</a></p>
+
+                <div class="form-group">
+                    <label for="email">E-post *</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div class="info-item">
-                    <h3>⏰ Öppet</h3>
-                    <p>Mån-Fre: 08:00-17:00<br>Helger: Efter överenskommelse</p>
+
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone">
                 </div>
-            </div>
+
+                <div class="form-group">
+                    <label for="message">Beskriv problemet *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Skicka</button>
+                <p id="formMessage"></p>
+            </form>
         </div>
     </section>
 
