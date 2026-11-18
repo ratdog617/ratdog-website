@@ -561,3 +561,7 @@ img {
 .section-light {
   background-color: #D5D9D6 !important;
 }
+/* Återställ grön bakgrund på prisavsnittet */
+#priser {
+  background-color: #243a2e !important;
+}
