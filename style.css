@@ -536,3 +536,25 @@ img {
     font-size: 36px;
   }
 }
+
+
+
+/* Enhetlig ljusgrå bakgrund */
+body,
+.site-header,
+.section-light,
+.section,
+.cta-section {
+    background-color: #f2f3f1;
+}
+
+/* Behåll det mörkgröna prisavsnittet */
+.section-green {
+    background-color: #243a2e;
+    color: #ffffff;
+}
+
+/* Behåll mörk sidfot */
+.site-footer {
+    background-color: #17271e;
+}
