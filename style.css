@@ -2,14 +2,14 @@
 /* RATDOG – komplett design */
 
 :root {
-  --bg: #e5e7e6;
-  --green: #243a2e;
-  --green-dark: #17271e;
-  --text: #252a24;
-  --muted: #515b53;
-  --line: #c4cac5;
-  --white: #ffffff;
-  --accent: #9c7654;
+  --bg: #D5D9D6;
+  --green: #243A2E;
+  --green-dark: #17271E;
+  --text: #252A24;
+  --muted: #515B53;
+  --line: #B8C0BA;
+  --white: #FFFFFF;
+  --accent: #9C7654;
 }
 
 * {
@@ -135,7 +135,7 @@ img {
 .hero-lead {
   font-size: 18px;
   max-width: 480px;
-  color: #e3e8df;
+  color: #E3E8DF;
   margin: 0 0 32px;
 }
 
@@ -154,7 +154,7 @@ img {
 .hero-note {
   margin: 22px 0 0;
   font-size: 13px;
-  color: #d3ddd0;
+  color: #D3DDD0;
 }
 
 /* Knappar */
@@ -183,21 +183,22 @@ img {
 }
 
 .button-light:hover {
-  background: #edf0ec;
+  background: #EDF0EC;
 }
 
 /* Sidans avsnitt */
 
-.section,
+.section {
+  padding: 100px 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
 .section-light {
   background: var(--bg);
 }
 
-.section {
-  padding: 100px 0;
-}
-
-.section-green {
+.section.section-green {
   background: var(--green);
   color: var(--white);
 }
@@ -212,6 +213,10 @@ img {
   max-width: 690px;
   margin: 0 0 45px;
   color: var(--muted);
+}
+
+.section-green .section-intro {
+  color: #E0E6DD;
 }
 
 .split {
@@ -242,6 +247,10 @@ img {
   margin-top: 12px;
   color: var(--muted);
   font-size: 12px;
+}
+
+.section-green .photo-frame figcaption {
+  color: #E0E6DD;
 }
 
 /* Så arbetar vi */
@@ -275,6 +284,14 @@ img {
 .step p {
   margin: 0;
   color: var(--muted);
+}
+
+.section-green .step {
+  border-top-color: rgba(255,255,255,.3);
+}
+
+.section-green .step p {
+  color: #E0E6DD;
 }
 
 /* Priser */
@@ -312,9 +329,8 @@ img {
   margin: 0 0 18px;
 }
 
-.price-details p,
-.section-green .section-intro {
-  color: #e0e6dd;
+.price-details p {
+  color: #E0E6DD;
 }
 
 /* Vanliga frågor */
@@ -382,7 +398,7 @@ img {
 .form-field textarea,
 .form-field select {
   width: 100%;
-  border: 1px solid #b9c0ba;
+  border: 1px solid #B9C0BA;
   border-radius: 3px;
   background: var(--white);
   color: var(--text);
@@ -436,7 +452,7 @@ img {
 
 .site-footer {
   background: var(--green-dark);
-  color: #e6e9e1;
+  color: #E6E9E1;
   padding: 45px 0;
 }
 
@@ -455,7 +471,7 @@ img {
 
 .footer-small {
   font-size: 12px;
-  color: #bfc9bd;
+  color: #BFC9BD;
 }
 
 /* Surfplatta */
@@ -550,18 +566,4 @@ img {
   .section-title {
     font-size: 36px;
   }
-}
-
-/* Ljusgrå bakgrund på alla vanliga sektioner */
-:root {
-  --bg: #D5D9D6;
-}
-
-.section,
-.section-light {
-  background-color: #D5D9D6 !important;
-}
-/* Återställ grön bakgrund på prisavsnittet */
-#priser {
-  background-color: #243a2e !important;
 }
