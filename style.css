@@ -551,3 +551,13 @@ img {
     font-size: 36px;
   }
 }
+
+/* Ljusgrå bakgrund på alla vanliga sektioner */
+:root {
+  --bg: #D5D9D6;
+}
+
+.section,
+.section-light {
+  background-color: #D5D9D6 !important;
+}
